@@ -15,7 +15,7 @@ public class AplicadorDeDescontoTest {
 		desconto = new AplicadorDeDescontos();
 	}
 	
-	// 1 Teste
+	// Primeiro Teste Criado pelo Mauricio
 	@Test
 	public void macbookEIphoneTemDesconto(){
 		Item it1 = new Item("MACBOOK", 1, 3000);
