@@ -43,13 +43,14 @@ public class AplicadorDeDescontoTest {
 		Assert.assertEquals(2700 * 0.3, compra.getValorLiquido(), 0.0001);
 	}
 
-	// @Test
-	// public void descontoAteDoisProdutos(){
-	// Item it1 = new Item("XBOX", 1, 2700);
-	// Compra compra = new Compra(Arrays.asList(it1));
-	// desconto.aplica(compra);
-	// Assert.assertEquals(2700*0.3, compra.getValorLiquido(), 0.0001);
-	// }
+	 @Test
+	 public void descontoAteDoisProdutos(){
+		 Compra compra = new CompraBuilder()
+			.com("GELADEIRA", 2, 900).constroi();
+	 desconto.aplica(compra);
+	 	Assert.assertEquals(900*0.98, compra.getValorLiquido(), 0.0001);
+	 }
+	 
 	//
 	// @Test
 	// public void xboxTemDesconto(){
