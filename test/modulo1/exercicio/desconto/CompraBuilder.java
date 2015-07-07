@@ -5,7 +5,7 @@ import java.util.List;
 
 public class CompraBuilder {
 	
-	private List<Item> itens;
+	private List<Item> itens;	
 	
 	public CompraBuilder(){
 		this.itens = new ArrayList<Item>();		
@@ -18,6 +18,11 @@ public class CompraBuilder {
 	}
 	
 	public Compra constroi(){
+		// Valor padrao
+//		if(itens == null){
+//			Item it = new Item("Geladeira", 1, 1300);
+//			itens.add(it);
+//		}
 		return new Compra(this.itens);
 	}
 		
