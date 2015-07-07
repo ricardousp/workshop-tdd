@@ -17,6 +17,13 @@ public class CompraBuilder {
 		return this;
 	}
 	
+	// Sobrecarga
+	public CompraBuilder com(String nome, int quantidade, double valor){
+		Item it = new Item(nome, 1, valor);
+		itens.add(it);
+		return this;
+	}
+	
 	public Compra constroi(){
 		// Valor padrao
 //		if(itens == null){
